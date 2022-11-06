@@ -1,0 +1,28 @@
+This folder contains the necessary to simulate the dynamics of a qubit affected by 
+continuous measurement and obtain the QFI, the FI for continuous measurement and the 
+FI for a strong measurement on the conditioned state in the case where the Hamiltonian 
+determining the free dynamics depends on two parameters.
+The modulus of Uhlmann curvature is also derived.
+
+
+
+The cases investigated are the following:
+
+	hamiltonian type		operator measured		reference world
+
+>	2 indipendent frequencies	sigma -				Fluorescence
+>	2 indipendent frequencies	sigma z
+>	2 indipendent frequencies	sigma x & sigma y
+>	rotating field			sigma -
+
+
+
+To execute the programme run the command:
+
+> julia ContinuousMeasurement(reference world).jl
+
+
+
+Data file are organized as follow:
+
+time 	FI_11 	FI_12	FI_22	FIC_11	FIC_12	FIC_22	QFI_11	QFI_12	QFI_22	absD_12
